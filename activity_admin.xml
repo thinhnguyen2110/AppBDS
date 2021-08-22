@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ad"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lb_slogan"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        android:text="QUẢN LÝ ADMIN"/>
+    <Button
+        android:id="@+id/btn_create_category"
+        android:layout_below="@+id/btn_create_product"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Tạo Loại Bài Đăng"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_below="@+id/lb_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_create_product"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Đăng Bài"/>
+
+    <Button
+    android:layout_below="@+id/btn_create_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_xoa"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/button"
+    android:padding="20dp"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:text="Xóa Bài Đăng"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dki"
+    tools:context=".RegisterActivity">
+    <TextView
+        android:id="@+id/lbDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ TÀI KHOẢN"
+        android:textSize="40dp"
+        android:textColor="#F3D40B"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+    <EditText
+        android:id="@+id/txt_phone_dk"
+        android:hint="So dien thoai"
+        android:inputType="number"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:layout_below="@id/lbDK"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txt_name_dk"
+        android:hint="Ho va ten"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:layout_below="@id/txt_phone_dk"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txt_pass_dk"
+        android:hint="Mat khau"
+        android:inputType="number"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:layout_below="@id/txt_name_dk"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_register_dk"
+        android:layout_below="@id/txt_pass_dk"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+</RelativeLayout>

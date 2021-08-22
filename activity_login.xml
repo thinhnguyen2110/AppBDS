@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dn"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/lbDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#F3C10B"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/txt_name"
+        android:hint="Ho va Ten"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/lbDN"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:hint="Mat khau"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/txt_name"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_pass"
+        android:id="@+id/layout_them"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ck_remember"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Nhớ Mật Khẩu">
+        </CheckBox>
+        <TextView
+            android:layout_gravity="right"
+            android:id="@+id/txt_quenMK"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên Mật Khẩu">
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/layout_them"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </Button>
+    <TextView
+        android:id="@+id/admin_login"
+        android:text="Bạn là quản trị viên"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_login"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/not_admin_login"
+        android:text="Neu ban la nguoi dung?"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_login"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>
